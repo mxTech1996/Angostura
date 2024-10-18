@@ -1,5 +1,5 @@
-export const pageName = 'AKWC';
-export const primaryColor = '#000000';
+export const pageName = 'Angostura';
+export const primaryColor = '#ECCF58FF';
 export const backgroundColor = '#FFFFFF';
 export const makeClearBackground = (color) => {
   return {

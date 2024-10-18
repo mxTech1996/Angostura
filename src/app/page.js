@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main
       style={{
-        backgroundColor: '#DEF8EBFF',
+        backgroundColor: '#F7EDC6FF',
       }}
     >
       <Navbar />
@@ -43,34 +43,38 @@ export default function Home() {
           contentThirdSection={
             <div
               style={{ zIndex: 2 }}
-              className='flex flex-col px-48'
-              id='know-us'
+              className='flex flex-col px-32'
+              id='our-services'
             >
               <Typography.Title
                 level={3}
-                className='font-medium mb-10 text-center text-white'
+                className='font-medium mb-10 text-center text-white  '
               >
-                Know Us
+                Our Services
               </Typography.Title>
-              <Missions
-                textColor='#fff'
-                data={dataSite.info}
-                gridColumns={1}
+              <Features
+                gridColumns={2}
                 variant='text'
+                textColor='#fff'
+                features={dataSite.services}
               />
             </div>
           }
         />
       </div>
       <div className='container mx-auto flex flex-col gap-20 my-24'>
-        <div className='flex flex-col' id='our-services'>
-          <Typography.Title level={3} className='font-medium mb-10 text-center'>
-            Our Services
+        <div style={{ zIndex: 2 }} className='flex flex-col px-48' id='know-us'>
+          <Typography.Title
+            level={3}
+            className='font-medium mb-10 text-center text-black'
+          >
+            Know Us
           </Typography.Title>
-          <Features
-            gridColumns={2}
+          <Missions
+            textColor='#000'
+            data={dataSite.info}
+            gridColumns={3}
             variant='card'
-            features={dataSite.services}
           />
         </div>
         <div id='courses'>
