@@ -34,35 +34,32 @@ export default function Home() {
           title={dataSite.subtitle}
           description={dataSite.description}
           srcSecondary={dataSite.image_hero2}
-          withSubView
           images={[dataSite.image_hero, dataSite.image_hero2]}
           styleTextSecondSection={{
             color: 'black',
           }}
           withShadowText
-          contentThirdSection={
-            <div
-              style={{ zIndex: 2 }}
-              className='flex flex-col px-32'
-              id='our-services'
-            >
-              <Typography.Title
-                level={3}
-                className='font-medium mb-10 text-center text-white  '
-              >
-                Our Services
-              </Typography.Title>
-              <Features
-                gridColumns={2}
-                variant='text'
-                textColor='#fff'
-                features={dataSite.services}
-              />
-            </div>
-          }
         />
       </div>
       <div className='container mx-auto flex flex-col gap-20 my-24'>
+        <div
+          style={{ zIndex: 2 }}
+          className='flex flex-col px-32'
+          id='our-services'
+        >
+          <Typography.Title
+            level={3}
+            className='font-medium mb-10 text-center text-black'
+          >
+            Our Services
+          </Typography.Title>
+          <Features
+            gridColumns={2}
+            variant='text'
+            textColor='#000'
+            features={dataSite.services}
+          />
+        </div>
         <div style={{ zIndex: 2 }} className='flex flex-col px-48' id='know-us'>
           <Typography.Title
             level={3}

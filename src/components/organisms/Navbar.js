@@ -17,7 +17,7 @@ const Navbar = () => {
     <NavbarV2
       linksProps={{
         variant: 'underline',
-        align: 'left',
+        align: 'center',
       }}
       textColor='black'
       withLogo={true}
