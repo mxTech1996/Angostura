@@ -36,7 +36,7 @@ export const footerData = [
     label: 'Privacy',
   },
   {
-    href: '/pdf/TYC-ANGOSTURA-DICIEMBRE-2024.pdf',
+    href: '/pdf/TYC.pdf',
     label: 'Terms',
   },
 ];
